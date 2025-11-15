@@ -1,20 +1,24 @@
 import { Link } from "react-router-dom";
+import { Menu } from "lucide-react";
+import { useState } from "react";
 
 export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <header className="border-b border-border bg-background sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2 flex-shrink-0">
             <div className="w-8 h-8 bg-primary rounded-sm"></div>
             <span className="font-semibold text-foreground hidden sm:inline">
-              StudioHub
+              DuoServices
             </span>
           </Link>
 
-          {/* Navigation */}
-          <nav className="flex items-center gap-1 sm:gap-8">
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-1 lg:gap-6">
             <Link
               to="/"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
@@ -22,19 +26,93 @@ export default function Header() {
               Home
             </Link>
             <Link
-              to="/shop-a"
+              to="/about"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
             >
-              Creative Studio
+              About
             </Link>
             <Link
-              to="/shop-b"
+              to="/valiyamannil"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
             >
-              Design Lab
+              Valiyamannil
+            </Link>
+            <Link
+              to="/colors"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
+            >
+              Colors
+            </Link>
+            <Link
+              to="/products"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
+            >
+              Products
+            </Link>
+            <Link
+              to="/services"
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
+            >
+              Services
             </Link>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 hover:bg-secondary rounded transition-colors"
+          >
+            <Menu className="w-5 h-5 text-foreground" />
+          </button>
         </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <nav className="md:hidden border-t border-border py-4 space-y-2">
+            <Link
+              to="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
+            >
+              About
+            </Link>
+            <Link
+              to="/valiyamannil"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
+            >
+              Valiyamannil
+            </Link>
+            <Link
+              to="/colors"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
+            >
+              Colors
+            </Link>
+            <Link
+              to="/products"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
+            >
+              Products
+            </Link>
+            <Link
+              to="/services"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
+            >
+              Services
+            </Link>
+          </nav>
+        )}
       </div>
     </header>
   );
