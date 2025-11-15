@@ -4,20 +4,23 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
 
-const rootElement = document.getElementById("root");
+const container = document.getElementById("root");
 
-if (rootElement && !rootElement._react_root) {
-  const root = createRoot(rootElement);
-  (rootElement as any)._react_root = root;
-  root.render(
-    <StrictMode>
-      <App />
-    </StrictMode>
-  );
-} else if (rootElement && (rootElement as any)._react_root) {
-  (rootElement as any)._react_root.render(
-    <StrictMode>
-      <App />
-    </StrictMode>
-  );
+if (!container) {
+  throw new Error("Root element not found");
 }
+
+let root: any;
+
+if (!window.__vite_root) {
+  root = createRoot(container);
+  window.__vite_root = root;
+} else {
+  root = window.__vite_root;
+}
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
