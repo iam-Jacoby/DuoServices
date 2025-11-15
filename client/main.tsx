@@ -1,7 +1,7 @@
 import "./global.css";
 
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, Root } from "react-dom/client";
 import { App } from "./App";
 
 const container = document.getElementById("root");
@@ -10,16 +10,17 @@ if (!container) {
   throw new Error("Root element not found");
 }
 
-let root: any;
-
-if (!window.__vite_root) {
-  root = createRoot(container);
-  window.__vite_root = root;
-} else {
-  root = window.__vite_root;
+declare global {
+  interface Window {
+    __reactRoot?: Root;
+  }
 }
 
-root.render(
+if (!window.__reactRoot) {
+  window.__reactRoot = createRoot(container);
+}
+
+window.__reactRoot.render(
   <StrictMode>
     <App />
   </StrictMode>
