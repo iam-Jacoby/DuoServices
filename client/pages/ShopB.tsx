@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Zap, Code2, Lightbulb, TrendingUp } from "lucide-react";
+import { Brush, Zap, Shield, Phone, Mail, Star } from "lucide-react";
 
 export default function ShopB() {
   return (
@@ -9,23 +9,41 @@ export default function ShopB() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
-                Design Lab
+              <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-2">
+                Colors
               </h1>
+              <p className="text-lg text-primary font-semibold mb-6">
+                Professional Painting & Finishing Services
+              </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Innovation through design. Our design lab pushes boundaries with cutting-edge solutions and experimental approaches. We blend strategy with creativity to solve complex design challenges and deliver measurable results.
+                Transform your spaces with expert painting services. With 10+ years of experience and over 300 orders monthly, Colors delivers superior interior and exterior painting, wallpapering, and finishing solutions for residential and commercial clients.
               </p>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                From interactive prototypes to scalable design systems, we create digital solutions that set industry standards and drive business growth.
-              </p>
+              <div className="space-y-3 mb-8">
+                <div className="flex items-start gap-3">
+                  <Brush className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Professional painting techniques</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Zap className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Quick project completion</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Shield className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Quality guaranteed with warranty</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Star className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">Eco-friendly, low-VOC paints</span>
+                </div>
+              </div>
               <button className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
-                Get Started
+                Get Free Estimate
               </button>
             </div>
             <div className="overflow-hidden rounded h-96 sm:h-full">
               <img
-                src="https://images.pexels.com/photos/4884116/pexels-photo-4884116.jpeg"
-                alt="Design Lab workspace"
+                src="https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg"
+                alt="Professional painting service"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -33,249 +51,272 @@ export default function ShopB() {
         </div>
       </section>
 
-      {/* Expertise Section */}
-      <section className="bg-secondary/50 border-b border-border">
+      {/* Services Section */}
+      <section className="bg-secondary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-12">
-            Our Expertise
+            Our Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Expertise 1 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded bg-primary/10">
-                  <Lightbulb className="w-6 h-6 text-primary" />
-                </div>
+            {/* Service 1 */}
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-primary/10 rounded mb-4 flex items-center justify-center">
+                <Brush className="w-6 h-6 text-primary" />
               </div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  UX/UI Design
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  User-centered design solutions that prioritize accessibility and engagement. We research, iterate, and validate every design decision.
-                </p>
-              </div>
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                Interior Painting
+              </h3>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                Complete interior painting solutions for homes and offices. Professional surface preparation, premium paint application, and impeccable finishes with minimal disruption.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>✓ Surface preparation & priming</li>
+                <li>✓ Premium paint quality</li>
+                <li>✓ Clean, professional execution</li>
+                <li>✓ Custom color selection</li>
+              </ul>
             </div>
 
-            {/* Expertise 2 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded bg-primary/10">
-                  <Code2 className="w-6 h-6 text-primary" />
-                </div>
+            {/* Service 2 */}
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-primary/10 rounded mb-4 flex items-center justify-center">
+                <Shield className="w-6 h-6 text-primary" />
               </div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Design Systems
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Scalable, documented design systems that enable consistency and accelerate product development across your organization.
-                </p>
-              </div>
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                Exterior Painting
+              </h3>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                Weather-resistant exterior painting that protects and beautifies your property. UV-resistant coatings designed to withstand harsh climatic conditions for 10+ years.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>✓ Weather-resistant coatings</li>
+                <li>✓ UV protection</li>
+                <li>✓ Long-lasting durability</li>
+                <li>✓ Mildew resistance</li>
+              </ul>
             </div>
 
-            {/* Expertise 3 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded bg-primary/10">
-                  <Zap className="w-6 h-6 text-primary" />
-                </div>
+            {/* Service 3 */}
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-primary/10 rounded mb-4 flex items-center justify-center">
+                <Zap className="w-6 h-6 text-primary" />
               </div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Interactive Design
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Dynamic, interactive experiences that engage users and communicate your message with impact and innovation.
-                </p>
-              </div>
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                Spray Painting
+              </h3>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                Industrial-grade spray painting for detailed work and commercial projects. Professional equipment ensures even coverage, superior finish, and exceptional results.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>✓ Even, seamless coverage</li>
+                <li>✓ Professional-grade equipment</li>
+                <li>✓ Quick-drying formulas</li>
+                <li>✓ Multiple finish options</li>
+              </ul>
             </div>
 
-            {/* Expertise 4 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded bg-primary/10">
-                  <TrendingUp className="w-6 h-6 text-primary" />
-                </div>
+            {/* Service 4 */}
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-primary/10 rounded mb-4 flex items-center justify-center">
+                <Star className="w-6 h-6 text-primary" />
               </div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Performance Optimization
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Design with performance in mind. We optimize for speed, accessibility, and user satisfaction across all devices.
-                </p>
-              </div>
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                Wallpapering & Decoration
+              </h3>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                Professional wallpaper installation and wall decoration services. Transform spaces with designer patterns applied by skilled craftsmen with precision.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>✓ Precise installation</li>
+                <li>✓ Designer selections</li>
+                <li>✓ Surface preparation included</li>
+                <li>✓ Long-lasting application</li>
+              </ul>
+            </div>
+
+            {/* Service 5 */}
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                Varnishing & Finishing
+              </h3>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                Professional varnishing and protective finishing for wood surfaces and more. Enhances beauty while providing superior protection against damage and wear.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>✓ High-gloss finishes</li>
+                <li>✓ Water-resistant protection</li>
+                <li>✓ Professional-grade materials</li>
+                <li>✓ Multi-purpose application</li>
+              </ul>
+            </div>
+
+            {/* Service 6 */}
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                Commercial Painting
+              </h3>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                Large-scale commercial painting for offices, retail, and industrial facilities. Professional project management ensures minimal disruption to business operations.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>✓ Project planning & scheduling</li>
+                <li>✓ Minimal business disruption</li>
+                <li>✓ Quality assurance checks</li>
+                <li>✓ Competitive large-project rates</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Solutions Section */}
-      <section className="bg-background">
+      {/* Trust Section */}
+      <section className="bg-background border-y border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-12">
-            Design Solutions
+            Why Trust Colors
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Solution 1 */}
-            <div className="border border-border rounded p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">
-                Product Design
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl font-bold text-primary">10+</span>
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">
+                Years of Experience
               </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                End-to-end product design from concept through launch. We validate assumptions through research and iteration, ensuring your product resonates with users.
+              <p className="text-muted-foreground">
+                Over a decade of excellence in painting and finishing services with proven track record.
               </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• User research and personas</li>
-                <li>• Wireframing and prototyping</li>
-                <li>• Usability testing and validation</li>
-                <li>• Implementation support</li>
-              </ul>
             </div>
 
-            {/* Solution 2 */}
-            <div className="border border-border rounded p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">
-                Digital Transformation
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl font-bold text-primary">300+</span>
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">
+                Monthly Projects
               </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Modernize your digital presence with thoughtful design and strategic implementation. We help organizations evolve their digital capabilities.
+              <p className="text-muted-foreground">
+                Serving hundreds of satisfied clients every month with consistent quality and reliability.
               </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Digital strategy and roadmap</li>
-                <li>• Legacy system modernization</li>
-                <li>• Change management and adoption</li>
-                <li>• Training and documentation</li>
-              </ul>
             </div>
 
-            {/* Solution 3 */}
-            <div className="border border-border rounded p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">
-                Web & App Development
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl font-bold text-primary">✓</span>
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">
+                Quality & Warranty
               </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Full-stack design and development services for web and mobile applications. We create performant, accessible experiences.
+              <p className="text-muted-foreground">
+                Premium materials and expert workmanship backed by comprehensive warranty guarantees.
               </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Responsive web design</li>
-                <li>• Mobile app interface design</li>
-                <li>• Progressive web applications</li>
-                <li>• Cross-platform optimization</li>
-              </ul>
-            </div>
-
-            {/* Solution 4 */}
-            <div className="border border-border rounded p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-semibold text-foreground mb-4">
-                Design Consultation
-              </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Expert guidance and support for your internal design initiatives. We provide strategic recommendations and hands-on expertise.
-              </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Design strategy and planning</li>
-                <li>• Team mentorship and training</li>
-                <li>• Design audit and recommendations</li>
-                <li>• Continuous optimization support</li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
       {/* Portfolio Section */}
-      <section className="bg-secondary/50 border-y border-border">
+      <section className="bg-secondary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-12">
-            Design Showcase
+            Recent Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="group cursor-pointer">
-                <div className="overflow-hidden bg-muted rounded h-64 mb-4">
-                  <img
-                    src={`https://images.pexels.com/photos/${34658645 + i * 100}/pexels-photo-${34658645 + i * 100}.jpeg`}
-                    alt={`Design ${i}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      e.currentTarget.src = "https://images.pexels.com/photos/34658645/pexels-photo-34658645.jpeg";
-                    }}
-                  />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                  Design Project {i}
+            <div className="group cursor-pointer overflow-hidden rounded">
+              <div className="h-64 bg-muted overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/5217852/pexels-photo-5217852.jpeg"
+                  alt="Residential interior painting"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="bg-background border border-t-0 border-border p-4">
+                <h3 className="font-semibold text-foreground mb-1">
+                  Residential Interior Project
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  User-centered design solution with measurable impact on engagement and conversion metrics.
+                  Complete interior painting and finishing for modern home
                 </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+            </div>
 
-      {/* Approach Section */}
-      <section className="bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-12">
-            Our Design Approach
-          </h2>
-          <div className="space-y-8">
-            {[
-              {
-                step: "01",
-                title: "Research & Insights",
-                description: "Deep dive into your users, market, and competitive landscape. We gather insights that drive informed design decisions.",
-              },
-              {
-                step: "02",
-                title: "Strategy & Direction",
-                description: "Develop design strategy aligned with business goals. Create clear direction and success metrics for the project.",
-              },
-              {
-                step: "03",
-                title: "Design & Iterate",
-                description: "Create high-fidelity designs and interactive prototypes. Validate assumptions through user feedback and testing.",
-              },
-              {
-                step: "04",
-                title: "Implementation & Support",
-                description: "Support implementation and ensure design quality. Provide ongoing optimization based on real-world performance data.",
-              },
-            ].map((item) => (
-              <div key={item.step} className="flex gap-8 items-start">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded bg-primary text-primary-foreground font-bold">
-                    {item.step}
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
+            <div className="group cursor-pointer overflow-hidden rounded">
+              <div className="h-64 bg-muted overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/221027/pexels-photo-221027.jpeg"
+                  alt="Exterior renovation painting"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
-            ))}
+              <div className="bg-background border border-t-0 border-border p-4">
+                <h3 className="font-semibold text-foreground mb-1">
+                  Exterior Renovation
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  Professional exterior painting with weather-resistant coating
+                </p>
+              </div>
+            </div>
+
+            <div className="group cursor-pointer overflow-hidden rounded">
+              <div className="h-64 bg-muted overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/8134772/pexels-photo-8134772.jpeg"
+                  alt="Commercial office painting"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="bg-background border border-t-0 border-border p-4">
+                <h3 className="font-semibold text-foreground mb-1">
+                  Commercial Office Space
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  Large-scale commercial painting project completed on schedule
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-primary text-primary-foreground border-t border-primary">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Ready to Innovate Your Design?
+      {/* Contact Section */}
+      <section className="bg-background">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-6">
+            Ready to Paint Your Space?
           </h2>
-          <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed">
-            Let's collaborate to create design solutions that drive business results and delight your users. Explore what's possible.
+          <p className="text-center text-muted-foreground mb-8 leading-relaxed">
+            Contact Colors for a free estimate and expert consultation. Our team is ready to transform your space with professional painting services.
           </p>
-          <button className="px-8 py-3 bg-primary-foreground text-primary font-medium rounded hover:bg-primary-foreground/90 transition-colors">
-            Schedule a Consultation
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+            <div className="bg-secondary border border-border rounded p-6 text-center">
+              <Phone className="w-6 h-6 text-primary mx-auto mb-3" />
+              <p className="text-sm text-muted-foreground mb-2">Phone</p>
+              <a href="tel:+91" className="text-foreground font-semibold hover:text-primary transition-colors">
+                +91 XXXXX XXXXX
+              </a>
+            </div>
+
+            <div className="bg-secondary border border-border rounded p-6 text-center">
+              <Mail className="w-6 h-6 text-primary mx-auto mb-3" />
+              <p className="text-sm text-muted-foreground mb-2">Email</p>
+              <a href="mailto:info@colors.com" className="text-foreground font-semibold hover:text-primary transition-colors">
+                info@colors.com
+              </a>
+            </div>
+
+            <div className="bg-secondary border border-border rounded p-6 text-center">
+              <span className="text-2xl text-primary mx-auto mb-3 inline-block">💬</span>
+              <p className="text-sm text-muted-foreground mb-2">WhatsApp</p>
+              <a href="https://wa.me/your-number" className="text-foreground font-semibold hover:text-primary transition-colors">
+                Message Us
+              </a>
+            </div>
+          </div>
+
+          <button className="w-full px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
+            Request Free Estimate
           </button>
         </div>
       </section>
