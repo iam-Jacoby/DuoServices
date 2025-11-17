@@ -2,9 +2,14 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { services } from "@/data/services";
 import { Wrench, Droplet } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function Services() {
   const [selectedShop, setSelectedShop] = useState<string | null>(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const filteredServices = selectedShop
     ? services.filter((s) => s.shop === selectedShop)
