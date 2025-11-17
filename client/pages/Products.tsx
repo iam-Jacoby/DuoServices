@@ -2,9 +2,14 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { products } from "@/data/products";
 import { Filter } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function Products() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const filteredProducts = selectedCategory
     ? products.filter((p) => p.category === selectedCategory)
