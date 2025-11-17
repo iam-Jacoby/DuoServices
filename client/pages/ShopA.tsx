@@ -221,23 +221,23 @@ export default function ShopA() {
             <div className="bg-background border border-border rounded p-6 text-center">
               <Phone className="w-6 h-6 text-primary mx-auto mb-3" />
               <p className="text-sm text-muted-foreground mb-2">Phone</p>
-              <a href="tel:+91" className="text-foreground font-semibold hover:text-primary transition-colors">
-                +91 XXXXX XXXXX
+              <a href="tel:+919400097977" className="text-foreground font-semibold hover:text-primary transition-colors">
+                +91 9400097977
               </a>
             </div>
 
             <div className="bg-background border border-border rounded p-6 text-center">
-              <Mail className="w-6 h-6 text-primary mx-auto mb-3" />
-              <p className="text-sm text-muted-foreground mb-2">Email</p>
-              <a href="mailto:info@valiyamannil.com" className="text-foreground font-semibold hover:text-primary transition-colors">
-                info@valiyamannil.com
-              </a>
+              <span className="text-2xl text-primary mx-auto mb-3 inline-block">📍</span>
+              <p className="text-sm text-muted-foreground mb-2">Address</p>
+              <p className="text-foreground font-semibold">
+                21/542/B5, Vettiyanickal Building, Erumely
+              </p>
             </div>
 
             <div className="bg-background border border-border rounded p-6 text-center">
               <span className="text-2xl text-primary mx-auto mb-3 inline-block">💬</span>
               <p className="text-sm text-muted-foreground mb-2">WhatsApp</p>
-              <a href="https://wa.me/your-number" className="text-foreground font-semibold hover:text-primary transition-colors">
+              <a href="https://wa.me/919400097977" className="text-foreground font-semibold hover:text-primary transition-colors">
                 Message Us
               </a>
             </div>
