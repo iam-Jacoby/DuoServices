@@ -62,12 +62,12 @@ export default function Header() {
             >
               Services
             </Link>
-            <a
-              href="https://wa.me/your-number?text=Hi, I would like to request a quote for your services."
+            <button
+              onClick={handleRequestQuote}
               className="ml-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded transition-colors text-sm"
             >
               Request Quote
-            </a>
+            </button>
           </nav>
 
           {/* Mobile Menu Button */}
