@@ -1,7 +1,12 @@
 import Layout from "@/components/Layout";
 import { Brush, Zap, Shield, Phone, Mail, Star } from "lucide-react";
+import { useEffect } from "react";
 
 export default function ShopB() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       {/* Hero Section */}
