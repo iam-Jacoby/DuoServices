@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Layout from "@/components/Layout";
 import { products } from "@/data/products";
 import { Filter } from "lucide-react";
