@@ -124,12 +124,15 @@ export default function Header() {
             >
               Services
             </Link>
-            <a
-              href="https://wa.me/your-number?text=Hi, I would like to request a quote for your services."
-              className="block text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded transition-colors mt-2"
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                handleRequestQuote();
+              }}
+              className="block w-full text-left text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded transition-colors mt-2"
             >
               Request Quote
-            </a>
+            </button>
           </nav>
         )}
       </div>
