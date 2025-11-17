@@ -29,7 +29,9 @@ export default function Products() {
               Products & Materials
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Explore our comprehensive catalog of premium gypsum boards, ceiling materials, and professional painting supplies. Filter by category to find exactly what you need.
+              Explore our comprehensive catalog of premium gypsum boards,
+              ceiling materials, and professional painting supplies. Filter by
+              category to find exactly what you need.
             </p>
           </div>
         </div>
@@ -42,7 +44,9 @@ export default function Products() {
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
               <Filter className="w-5 h-5 text-primary" />
-              <h2 className="text-xl font-semibold text-foreground">Filter Products</h2>
+              <h2 className="text-xl font-semibold text-foreground">
+                Filter Products
+              </h2>
             </div>
             <div className="flex flex-wrap gap-3">
               <button
@@ -60,7 +64,7 @@ export default function Products() {
                   key={category.id}
                   onClick={() =>
                     setSelectedCategory(
-                      selectedCategory === category.id ? null : category.id
+                      selectedCategory === category.id ? null : category.id,
                     )
                   }
                   className={`px-4 py-2 rounded font-medium transition-all ${
@@ -152,7 +156,8 @@ export default function Products() {
             Need Help Finding the Right Product?
           </h2>
           <p className="text-lg text-primary-foreground/80 mb-8">
-            Our experts are ready to assist you with product selection, specifications, and quotations.
+            Our experts are ready to assist you with product selection,
+            specifications, and quotations.
           </p>
           <button className="px-6 py-3 bg-primary-foreground text-primary font-medium rounded hover:bg-primary-foreground/90 transition-colors">
             Contact Our Team

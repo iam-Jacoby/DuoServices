@@ -21,24 +21,36 @@ export default function ShopA() {
                 Premium Gypsum & Ceiling Materials Supplier
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Your trusted partner for high-quality gypsum boards, suspended ceilings, PVC panels, and ceiling lights. With 2+ years of excellence and over 100 orders monthly, we deliver superior materials and reliable service for residential and commercial projects.
+                Your trusted partner for high-quality gypsum boards, suspended
+                ceilings, PVC panels, and ceiling lights. With 2+ years of
+                excellence and over 100 orders monthly, we deliver superior
+                materials and reliable service for residential and commercial
+                projects.
               </p>
               <div className="space-y-3 mb-8">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground">Premium quality materials</span>
+                  <span className="text-foreground">
+                    Premium quality materials
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground">Fast delivery and installation support</span>
+                  <span className="text-foreground">
+                    Fast delivery and installation support
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground">Expert technical guidance</span>
+                  <span className="text-foreground">
+                    Expert technical guidance
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground">Competitive wholesale pricing</span>
+                  <span className="text-foreground">
+                    Competitive wholesale pricing
+                  </span>
                 </div>
               </div>
               <button className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
@@ -69,7 +81,9 @@ export default function ShopA() {
                 Premium Gypsum Boards
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                High-quality gypsum boards for interior walls and ceiling applications. Fire-resistant, moisture-resistant variants available with excellent acoustical properties.
+                High-quality gypsum boards for interior walls and ceiling
+                applications. Fire-resistant, moisture-resistant variants
+                available with excellent acoustical properties.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                 <li>✓ Fire-resistant options</li>
@@ -88,7 +102,9 @@ export default function ShopA() {
                 Suspended Ceiling Systems
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Modern suspended ceiling systems with thermal and acoustic insulation. Perfect for offices, retail spaces, and residential interiors with various finish options.
+                Modern suspended ceiling systems with thermal and acoustic
+                insulation. Perfect for offices, retail spaces, and residential
+                interiors with various finish options.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                 <li>✓ Thermal insulation</li>
@@ -107,7 +123,9 @@ export default function ShopA() {
                 PVC Panels & Profiles
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Durable PVC panels and profiles for wall cladding and ceiling applications. Weather-resistant, low-maintenance solution for modern interiors and exteriors.
+                Durable PVC panels and profiles for wall cladding and ceiling
+                applications. Weather-resistant, low-maintenance solution for
+                modern interiors and exteriors.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                 <li>✓ Waterproof construction</li>
@@ -126,7 +144,9 @@ export default function ShopA() {
                 LED Ceiling Lights
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Energy-efficient LED ceiling light fixtures with modern design. Optimal illumination while reducing power consumption for commercial and residential spaces.
+                Energy-efficient LED ceiling light fixtures with modern design.
+                Optimal illumination while reducing power consumption for
+                commercial and residential spaces.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                 <li>✓ Energy-efficient LED</li>
@@ -145,7 +165,9 @@ export default function ShopA() {
                 Towel Racks & Bathroom Accessories
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Stylish and durable towel racks ranging from small ring designs to large multi-purpose storage solutions. Perfect for bathrooms, kitchens, and utility areas.
+                Stylish and durable towel racks ranging from small ring designs
+                to large multi-purpose storage solutions. Perfect for bathrooms,
+                kitchens, and utility areas.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                 <li>✓ Small ring to multi-purpose designs</li>
@@ -176,7 +198,8 @@ export default function ShopA() {
                 Years of Excellence
               </h3>
               <p className="text-muted-foreground">
-                Established and trusted supplier with consistent quality and customer satisfaction since our inception.
+                Established and trusted supplier with consistent quality and
+                customer satisfaction since our inception.
               </p>
             </div>
 
@@ -188,7 +211,8 @@ export default function ShopA() {
                 Monthly Orders
               </h3>
               <p className="text-muted-foreground">
-                Serving hundreds of customers every month with reliable delivery and excellent service standards.
+                Serving hundreds of customers every month with reliable delivery
+                and excellent service standards.
               </p>
             </div>
 
@@ -200,7 +224,8 @@ export default function ShopA() {
                 Quality Guarantee
               </h3>
               <p className="text-muted-foreground">
-                Every product meets international standards with comprehensive warranty and support.
+                Every product meets international standards with comprehensive
+                warranty and support.
               </p>
             </div>
           </div>
@@ -214,20 +239,26 @@ export default function ShopA() {
             Get in Touch
           </h2>
           <p className="text-center text-muted-foreground mb-8 leading-relaxed">
-            Need premium gypsum materials or ceiling solutions? Our team is ready to assist with quotes, technical guidance, and fast delivery.
+            Need premium gypsum materials or ceiling solutions? Our team is
+            ready to assist with quotes, technical guidance, and fast delivery.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
             <div className="bg-background border border-border rounded p-6 text-center">
               <Phone className="w-6 h-6 text-primary mx-auto mb-3" />
               <p className="text-sm text-muted-foreground mb-2">Phone</p>
-              <a href="tel:+919400097977" className="text-foreground font-semibold hover:text-primary transition-colors">
+              <a
+                href="tel:+919400097977"
+                className="text-foreground font-semibold hover:text-primary transition-colors"
+              >
                 +91 9400097977
               </a>
             </div>
 
             <div className="bg-background border border-border rounded p-6 text-center">
-              <span className="text-2xl text-primary mx-auto mb-3 inline-block">📍</span>
+              <span className="text-2xl text-primary mx-auto mb-3 inline-block">
+                📍
+              </span>
               <p className="text-sm text-muted-foreground mb-2">Address</p>
               <p className="text-foreground font-semibold">
                 21/542/B5, Vettiyanickal Building, Erumely
@@ -235,9 +266,14 @@ export default function ShopA() {
             </div>
 
             <div className="bg-background border border-border rounded p-6 text-center">
-              <span className="text-2xl text-primary mx-auto mb-3 inline-block">💬</span>
+              <span className="text-2xl text-primary mx-auto mb-3 inline-block">
+                💬
+              </span>
               <p className="text-sm text-muted-foreground mb-2">WhatsApp</p>
-              <a href="https://wa.me/919400097977" className="text-foreground font-semibold hover:text-primary transition-colors">
+              <a
+                href="https://wa.me/919400097977"
+                className="text-foreground font-semibold hover:text-primary transition-colors"
+              >
                 Message Us
               </a>
             </div>

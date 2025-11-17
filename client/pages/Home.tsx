@@ -21,9 +21,10 @@ export default function Home() {
       <section
         className="relative min-h-[600px] flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/279632/pexels-photo-279632.jpeg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundImage:
+            'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/279632/pexels-photo-279632.jpeg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16 sm:py-24">
@@ -31,7 +32,8 @@ export default function Home() {
             Premium Materials. Expert Craftsmanship.
           </h1>
           <p className="text-lg sm:text-xl text-gray-100 mb-8 leading-relaxed">
-            Your one-stop solution for quality gypsum materials and professional painting services
+            Your one-stop solution for quality gypsum materials and professional
+            painting services
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -45,7 +47,7 @@ export default function Home() {
               className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-white text-white font-medium hover:bg-white/10 transition-colors rounded"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.946 1.266l-.355.192-3.674-.96.992 3.63-.235.374a9.86 9.86 0 .001 15.313l.352.19 3.695.953-.992-3.629.235-.374a9.87 9.87 0 004.946-1.266h.004c5.43 0 9.868-4.438 9.868-9.868 0-5.43-4.438-9.868-9.868-9.868z"/>
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.946 1.266l-.355.192-3.674-.96.992 3.63-.235.374a9.86 9.86 0 .001 15.313l.352.19 3.695.953-.992-3.629.235-.374a9.87 9.87 0 004.946-1.266h.004c5.43 0 9.868-4.438 9.868-9.868 0-5.43-4.438-9.868-9.868-9.868z" />
               </svg>
               WhatsApp Us
             </a>
@@ -78,7 +80,9 @@ export default function Home() {
                     Gypsum & Ceiling Materials
                   </p>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
-                    Premium supplier of gypsum boards, suspended ceilings, PVC panels, and ceiling lights for residential and commercial projects.
+                    Premium supplier of gypsum boards, suspended ceilings, PVC
+                    panels, and ceiling lights for residential and commercial
+                    projects.
                   </p>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                     <span className="flex items-center gap-1">
@@ -116,7 +120,9 @@ export default function Home() {
                     Professional Painting Services
                   </p>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
-                    Expert painting, wallpapering, spray coating, and finishing services for interiors and exteriors with 10+ years of excellence.
+                    Expert painting, wallpapering, spray coating, and finishing
+                    services for interiors and exteriors with 10+ years of
+                    excellence.
                   </p>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                     <span className="flex items-center gap-1">
@@ -154,7 +160,8 @@ export default function Home() {
                 Quality Assured
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Premium materials and professional craftsmanship guaranteed. Every project meets our high standards of excellence.
+                Premium materials and professional craftsmanship guaranteed.
+                Every project meets our high standards of excellence.
               </p>
             </div>
 
@@ -166,7 +173,8 @@ export default function Home() {
                 Fast Delivery
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Quick turnaround times without compromising quality. We respect your schedules and deadlines.
+                Quick turnaround times without compromising quality. We respect
+                your schedules and deadlines.
               </p>
             </div>
 
@@ -178,7 +186,8 @@ export default function Home() {
                 Expert Support
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Dedicated customer service and technical expertise. We guide you through every step of your project.
+                Dedicated customer service and technical expertise. We guide you
+                through every step of your project.
               </p>
             </div>
           </div>
@@ -224,19 +233,27 @@ export default function Home() {
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
-                  <span className="text-muted-foreground">Premium Gypsum Boards</span>
+                  <span className="text-muted-foreground">
+                    Premium Gypsum Boards
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
-                  <span className="text-muted-foreground">Suspended Ceiling Systems</span>
+                  <span className="text-muted-foreground">
+                    Suspended Ceiling Systems
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
-                  <span className="text-muted-foreground">PVC Panels & Profiles</span>
+                  <span className="text-muted-foreground">
+                    PVC Panels & Profiles
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
-                  <span className="text-muted-foreground">LED Ceiling Lights</span>
+                  <span className="text-muted-foreground">
+                    LED Ceiling Lights
+                  </span>
                 </li>
               </ul>
               <Link
@@ -256,19 +273,27 @@ export default function Home() {
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
-                  <span className="text-muted-foreground">Interior & Exterior Painting</span>
+                  <span className="text-muted-foreground">
+                    Interior & Exterior Painting
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
-                  <span className="text-muted-foreground">Professional Spray Painting</span>
+                  <span className="text-muted-foreground">
+                    Professional Spray Painting
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
-                  <span className="text-muted-foreground">Wallpapering & Decoration</span>
+                  <span className="text-muted-foreground">
+                    Wallpapering & Decoration
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
-                  <span className="text-muted-foreground">Varnish & Protective Finishing</span>
+                  <span className="text-muted-foreground">
+                    Varnish & Protective Finishing
+                  </span>
                 </li>
               </ul>
               <Link
@@ -284,13 +309,17 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section id="ready-to-start" className="bg-secondary/50 border-t border-border">
+      <section
+        id="ready-to-start"
+        className="bg-secondary/50 border-t border-border"
+      >
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
             Ready to Get Started?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            Whether you need premium ceiling materials or professional painting services, our teams are ready to assist you with expert solutions.
+            Whether you need premium ceiling materials or professional painting
+            services, our teams are ready to assist you with expert solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

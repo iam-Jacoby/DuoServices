@@ -18,7 +18,10 @@ export default function About() {
               About DuoServices
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              A unified platform bringing together two trusted businesses committed to excellence in their respective fields. Together, we deliver comprehensive solutions for all your gypsum, ceiling, and painting needs.
+              A unified platform bringing together two trusted businesses
+              committed to excellence in their respective fields. Together, we
+              deliver comprehensive solutions for all your gypsum, ceiling, and
+              painting needs.
             </p>
           </div>
         </div>
@@ -40,7 +43,10 @@ export default function About() {
                 Valiyamannil Agencies
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Established as a premier supplier of gypsum boards and ceiling materials, Valiyamannil Agencies has been serving the construction and interior design industry with exceptional quality and reliability.
+                Established as a premier supplier of gypsum boards and ceiling
+                materials, Valiyamannil Agencies has been serving the
+                construction and interior design industry with exceptional
+                quality and reliability.
               </p>
               <div className="space-y-4 mb-8">
                 <div>
@@ -48,7 +54,10 @@ export default function About() {
                     Our Journey
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    With over 2 years in business, we've built a strong reputation for delivering premium gypsum boards, suspended ceiling systems, PVC panels, and comprehensive lighting solutions.
+                    With over 2 years in business, we've built a strong
+                    reputation for delivering premium gypsum boards, suspended
+                    ceiling systems, PVC panels, and comprehensive lighting
+                    solutions.
                   </p>
                 </div>
                 <div>
@@ -56,7 +65,10 @@ export default function About() {
                     Current Impact
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Processing 100+ orders monthly, serving residential and commercial clients across Kerala. We focus on quality materials, professional installation support, and competitive pricing.
+                    Processing 100+ orders monthly, serving residential and
+                    commercial clients across Kerala. We focus on quality
+                    materials, professional installation support, and
+                    competitive pricing.
                   </p>
                 </div>
               </div>
@@ -88,7 +100,10 @@ export default function About() {
                 Colors
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                A professional painting services company dedicated to transforming spaces with high-quality finishes. Colors specializes in residential and commercial painting projects with attention to detail and customer satisfaction.
+                A professional painting services company dedicated to
+                transforming spaces with high-quality finishes. Colors
+                specializes in residential and commercial painting projects with
+                attention to detail and customer satisfaction.
               </p>
               <div className="space-y-4 mb-8">
                 <div>
@@ -96,7 +111,10 @@ export default function About() {
                     Experience & Expertise
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    With 10+ years of excellence in the painting industry, Colors has built a reputation for delivering superior results across interior, exterior, spray painting, wallpapering, and finishing services.
+                    With 10+ years of excellence in the painting industry,
+                    Colors has built a reputation for delivering superior
+                    results across interior, exterior, spray painting,
+                    wallpapering, and finishing services.
                   </p>
                 </div>
                 <div>
@@ -104,7 +122,10 @@ export default function About() {
                     Scale & Reach
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Completing 300+ projects monthly, Colors serves diverse clientele from residential homeowners to large commercial enterprises, maintaining consistent quality and professionalism.
+                    Completing 300+ projects monthly, Colors serves diverse
+                    clientele from residential homeowners to large commercial
+                    enterprises, maintaining consistent quality and
+                    professionalism.
                   </p>
                 </div>
               </div>
@@ -128,21 +149,31 @@ export default function About() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="border border-border rounded p-8 bg-background">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Mission</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Mission
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                To provide superior quality materials and professional services that exceed customer expectations, enabling beautiful and functional spaces for every project.
+                To provide superior quality materials and professional services
+                that exceed customer expectations, enabling beautiful and
+                functional spaces for every project.
               </p>
             </div>
 
             <div className="border border-border rounded p-8 bg-background">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Vision</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Vision
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                To become the most trusted and preferred platform for comprehensive interior solutions, recognized for quality, reliability, and customer-centric service.
+                To become the most trusted and preferred platform for
+                comprehensive interior solutions, recognized for quality,
+                reliability, and customer-centric service.
               </p>
             </div>
 
             <div className="border border-border rounded p-8 bg-background">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Values</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Values
+              </h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li>✓ Quality & Excellence</li>
                 <li>✓ Customer Focus</li>
@@ -166,22 +197,26 @@ export default function About() {
               {
                 name: "Raj Kumar",
                 role: "Co-founder, Valiyamannil",
-                image: "https://images.pexels.com/photos/4100672/pexels-photo-4100672.jpeg",
+                image:
+                  "https://images.pexels.com/photos/4100672/pexels-photo-4100672.jpeg",
               },
               {
                 name: "Priya Singh",
                 role: "Co-founder, Colors",
-                image: "https://images.pexels.com/photos/5217852/pexels-photo-5217852.jpeg",
+                image:
+                  "https://images.pexels.com/photos/5217852/pexels-photo-5217852.jpeg",
               },
               {
                 name: "Arjun Nair",
                 role: "Operations Manager",
-                image: "https://images.pexels.com/photos/4128536/pexels-photo-4128536.jpeg",
+                image:
+                  "https://images.pexels.com/photos/4128536/pexels-photo-4128536.jpeg",
               },
               {
                 name: "Anjali Patel",
                 role: "Quality Assurance Lead",
-                image: "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg",
+                image:
+                  "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg",
               },
             ].map((member, i) => (
               <div key={i} className="text-center">
@@ -191,14 +226,17 @@ export default function About() {
                     alt={member.name}
                     className="w-full h-full object-cover"
                     onError={(e) => {
-                      e.currentTarget.src = "https://images.pexels.com/photos/4100672/pexels-photo-4100672.jpeg";
+                      e.currentTarget.src =
+                        "https://images.pexels.com/photos/4100672/pexels-photo-4100672.jpeg";
                     }}
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">
                   {member.name}
                 </h3>
-                <p className="text-sm text-primary font-medium">{member.role}</p>
+                <p className="text-sm text-primary font-medium">
+                  {member.role}
+                </p>
               </div>
             ))}
           </div>
@@ -223,7 +261,9 @@ export default function About() {
             </div>
             <div>
               <div className="text-4xl sm:text-5xl font-bold mb-2">100%</div>
-              <p className="text-primary-foreground/80">Satisfaction Guarantee</p>
+              <p className="text-primary-foreground/80">
+                Satisfaction Guarantee
+              </p>
             </div>
           </div>
         </div>
@@ -236,7 +276,8 @@ export default function About() {
             Start Your Project Today
           </h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            Whether you need premium materials from Valiyamannil or painting services from Colors, our teams are ready to assist.
+            Whether you need premium materials from Valiyamannil or painting
+            services from Colors, our teams are ready to assist.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -14,29 +14,43 @@ export default function Footer() {
               Valiyamannil Agencies
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Premier supplier of gypsum boards, ceiling materials, and PVC panels for residential and commercial projects.
+              Premier supplier of gypsum boards, ceiling materials, and PVC
+              panels for residential and commercial projects.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">+91 XXXXX XXXXX</span>
+                <span className="text-sm text-muted-foreground">
+                  +91 XXXXX XXXXX
+                </span>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@valiyamannil.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="mailto:info@valiyamannil.com"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   info@valiyamannil.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">Valiyamannil, Kerala</span>
+                <span className="text-sm text-muted-foreground">
+                  Valiyamannil, Kerala
+                </span>
               </li>
             </ul>
             <div className="mt-4 flex gap-2">
-              <a href="https://wa.me/your-number" className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded hover:bg-primary/90 transition-colors">
+              <a
+                href="https://wa.me/your-number"
+                className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded hover:bg-primary/90 transition-colors"
+              >
                 WhatsApp
               </a>
-              <Link to="/valiyamannil" className="text-xs border border-border px-3 py-1 rounded hover:bg-secondary transition-colors">
+              <Link
+                to="/valiyamannil"
+                className="text-xs border border-border px-3 py-1 rounded hover:bg-secondary transition-colors"
+              >
                 Learn More
               </Link>
             </div>
@@ -44,33 +58,45 @@ export default function Footer() {
 
           {/* Colors Painting */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">
-              Colors
-            </h3>
+            <h3 className="font-semibold text-foreground mb-4">Colors</h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Professional painting services including interior, exterior, spray painting, wallpapering, and varnishing solutions.
+              Professional painting services including interior, exterior, spray
+              painting, wallpapering, and varnishing solutions.
             </p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">+91 XXXXX XXXXX</span>
+                <span className="text-sm text-muted-foreground">
+                  +91 XXXXX XXXXX
+                </span>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@colors.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="mailto:info@colors.com"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   info@colors.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">Valiyamannil, Kerala</span>
+                <span className="text-sm text-muted-foreground">
+                  Valiyamannil, Kerala
+                </span>
               </li>
             </ul>
             <div className="mt-4 flex gap-2">
-              <a href="https://wa.me/your-number" className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded hover:bg-primary/90 transition-colors">
+              <a
+                href="https://wa.me/your-number"
+                className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded hover:bg-primary/90 transition-colors"
+              >
                 WhatsApp
               </a>
-              <Link to="/colors" className="text-xs border border-border px-3 py-1 rounded hover:bg-secondary transition-colors">
+              <Link
+                to="/colors"
+                className="text-xs border border-border px-3 py-1 rounded hover:bg-secondary transition-colors"
+              >
                 Learn More
               </Link>
             </div>

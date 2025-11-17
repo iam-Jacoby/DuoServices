@@ -27,7 +27,9 @@ export default function Services() {
               Services
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Comprehensive services from gypsum and ceiling solutions to professional painting and finishing. Choose from specialized services offered by both Valiyamannil Agencies and Colors.
+              Comprehensive services from gypsum and ceiling solutions to
+              professional painting and finishing. Choose from specialized
+              services offered by both Valiyamannil Agencies and Colors.
             </p>
           </div>
         </div>
@@ -157,7 +159,9 @@ export default function Services() {
                   {valiyamanilServices.map((service) => (
                     <li key={service.id} className="flex items-start gap-3">
                       <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
-                      <span className="text-muted-foreground">{service.name}</span>
+                      <span className="text-muted-foreground">
+                        {service.name}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -173,7 +177,9 @@ export default function Services() {
                   {colorsServices.map((service) => (
                     <li key={service.id} className="flex items-start gap-3">
                       <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
-                      <span className="text-muted-foreground">{service.name}</span>
+                      <span className="text-muted-foreground">
+                        {service.name}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -190,7 +196,8 @@ export default function Services() {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            Contact us for a free consultation and custom quote for your specific project needs.
+            Contact us for a free consultation and custom quote for your
+            specific project needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">

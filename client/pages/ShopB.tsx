@@ -21,24 +21,35 @@ export default function ShopB() {
                 Professional Painting & Finishing Services
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Transform your spaces with expert painting services. With 10+ years of experience and over 300 orders monthly, Colors delivers superior interior and exterior painting, wallpapering, and finishing solutions for residential and commercial clients.
+                Transform your spaces with expert painting services. With 10+
+                years of experience and over 300 orders monthly, Colors delivers
+                superior interior and exterior painting, wallpapering, and
+                finishing solutions for residential and commercial clients.
               </p>
               <div className="space-y-3 mb-8">
                 <div className="flex items-start gap-3">
                   <Brush className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground">Professional painting techniques</span>
+                  <span className="text-foreground">
+                    Professional painting techniques
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Zap className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground">Quick project completion</span>
+                  <span className="text-foreground">
+                    Quick project completion
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Shield className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground">Quality guaranteed with warranty</span>
+                  <span className="text-foreground">
+                    Quality guaranteed with warranty
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Star className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground">Eco-friendly, low-VOC paints</span>
+                  <span className="text-foreground">
+                    Eco-friendly, low-VOC paints
+                  </span>
                 </div>
               </div>
               <button className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
@@ -72,7 +83,9 @@ export default function ShopB() {
                 Interior Painting
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Complete interior painting solutions for homes and offices. Professional surface preparation, premium paint application, and impeccable finishes with minimal disruption.
+                Complete interior painting solutions for homes and offices.
+                Professional surface preparation, premium paint application, and
+                impeccable finishes with minimal disruption.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>✓ Surface preparation & priming</li>
@@ -91,7 +104,9 @@ export default function ShopB() {
                 Exterior Painting
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Weather-resistant exterior painting that protects and beautifies your property. UV-resistant coatings designed to withstand harsh climatic conditions for 10+ years.
+                Weather-resistant exterior painting that protects and beautifies
+                your property. UV-resistant coatings designed to withstand harsh
+                climatic conditions for 10+ years.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>✓ Weather-resistant coatings</li>
@@ -110,7 +125,9 @@ export default function ShopB() {
                 Spray Painting
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Industrial-grade spray painting for detailed work and commercial projects. Professional equipment ensures even coverage, superior finish, and exceptional results.
+                Industrial-grade spray painting for detailed work and commercial
+                projects. Professional equipment ensures even coverage, superior
+                finish, and exceptional results.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>✓ Even, seamless coverage</li>
@@ -129,7 +146,9 @@ export default function ShopB() {
                 Wallpapering & Decoration
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Professional wallpaper installation and wall decoration services. Transform spaces with designer patterns applied by skilled craftsmen with precision.
+                Professional wallpaper installation and wall decoration
+                services. Transform spaces with designer patterns applied by
+                skilled craftsmen with precision.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>✓ Precise installation</li>
@@ -145,7 +164,9 @@ export default function ShopB() {
                 Varnishing & Finishing
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Professional varnishing and protective finishing for wood surfaces and more. Enhances beauty while providing superior protection against damage and wear.
+                Professional varnishing and protective finishing for wood
+                surfaces and more. Enhances beauty while providing superior
+                protection against damage and wear.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>✓ High-gloss finishes</li>
@@ -161,7 +182,9 @@ export default function ShopB() {
                 Commercial Painting
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Large-scale commercial painting for offices, retail, and industrial facilities. Professional project management ensures minimal disruption to business operations.
+                Large-scale commercial painting for offices, retail, and
+                industrial facilities. Professional project management ensures
+                minimal disruption to business operations.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>✓ Project planning & scheduling</li>
@@ -174,15 +197,27 @@ export default function ShopB() {
             {/* Service 7 */}
             <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-primary/10 rounded mb-4 flex items-center justify-center">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                <svg
+                  className="w-6 h-6 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
                 </svg>
               </div>
               <h3 className="text-2xl font-semibold text-foreground mb-3">
                 House Cleaning Services
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Professional house cleaning services to keep your spaces clean and fresh. Comprehensive cleaning for residential properties with eco-friendly products and attention to detail.
+                Professional house cleaning services to keep your spaces clean
+                and fresh. Comprehensive cleaning for residential properties
+                with eco-friendly products and attention to detail.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>✓ Eco-friendly cleaning products</li>
@@ -210,7 +245,8 @@ export default function ShopB() {
                 Years of Experience
               </h3>
               <p className="text-muted-foreground">
-                Over a decade of excellence in painting and finishing services with proven track record.
+                Over a decade of excellence in painting and finishing services
+                with proven track record.
               </p>
             </div>
 
@@ -222,7 +258,8 @@ export default function ShopB() {
                 Monthly Projects
               </h3>
               <p className="text-muted-foreground">
-                Serving hundreds of satisfied clients every month with consistent quality and reliability.
+                Serving hundreds of satisfied clients every month with
+                consistent quality and reliability.
               </p>
             </div>
 
@@ -234,7 +271,8 @@ export default function ShopB() {
                 Quality & Warranty
               </h3>
               <p className="text-muted-foreground">
-                Premium materials and expert workmanship backed by comprehensive warranty guarantees.
+                Premium materials and expert workmanship backed by comprehensive
+                warranty guarantees.
               </p>
             </div>
           </div>
@@ -312,14 +350,19 @@ export default function ShopB() {
             Ready to Paint Your Space?
           </h2>
           <p className="text-center text-muted-foreground mb-8 leading-relaxed">
-            Contact Colors for a free estimate and expert consultation. Our team is ready to transform your space with professional painting services.
+            Contact Colors for a free estimate and expert consultation. Our team
+            is ready to transform your space with professional painting
+            services.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
             <div className="bg-secondary border border-border rounded p-6 text-center">
               <Phone className="w-6 h-6 text-primary mx-auto mb-3" />
               <p className="text-sm text-muted-foreground mb-2">Phone</p>
-              <a href="tel:+91" className="text-foreground font-semibold hover:text-primary transition-colors">
+              <a
+                href="tel:+91"
+                className="text-foreground font-semibold hover:text-primary transition-colors"
+              >
                 +91 XXXXX XXXXX
               </a>
             </div>
@@ -327,15 +370,23 @@ export default function ShopB() {
             <div className="bg-secondary border border-border rounded p-6 text-center">
               <Mail className="w-6 h-6 text-primary mx-auto mb-3" />
               <p className="text-sm text-muted-foreground mb-2">Email</p>
-              <a href="mailto:info@colors.com" className="text-foreground font-semibold hover:text-primary transition-colors">
+              <a
+                href="mailto:info@colors.com"
+                className="text-foreground font-semibold hover:text-primary transition-colors"
+              >
                 info@colors.com
               </a>
             </div>
 
             <div className="bg-secondary border border-border rounded p-6 text-center">
-              <span className="text-2xl text-primary mx-auto mb-3 inline-block">💬</span>
+              <span className="text-2xl text-primary mx-auto mb-3 inline-block">
+                💬
+              </span>
               <p className="text-sm text-muted-foreground mb-2">WhatsApp</p>
-              <a href="https://wa.me/your-number" className="text-foreground font-semibold hover:text-primary transition-colors">
+              <a
+                href="https://wa.me/your-number"
+                className="text-foreground font-semibold hover:text-primary transition-colors"
+              >
                 Message Us
               </a>
             </div>
