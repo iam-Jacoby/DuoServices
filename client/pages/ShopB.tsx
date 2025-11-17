@@ -170,6 +170,27 @@ export default function ShopB() {
                 <li>✓ Competitive large-project rates</li>
               </ul>
             </div>
+
+            {/* Service 7 */}
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-primary/10 rounded mb-4 flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                House Cleaning Services
+              </h3>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                Professional house cleaning services to keep your spaces clean and fresh. Comprehensive cleaning for residential properties with eco-friendly products and attention to detail.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>✓ Eco-friendly cleaning products</li>
+                <li>✓ Deep cleaning solutions</li>
+                <li>✓ Flexible scheduling</li>
+                <li>✓ Professional cleaning team</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
