@@ -138,6 +138,25 @@ export default function ShopA() {
                 Inquire →
               </button>
             </div>
+
+            {/* Product 5 */}
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-shadow">
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                Towel Racks & Bathroom Accessories
+              </h3>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                Stylish and durable towel racks ranging from small ring designs to large multi-purpose storage solutions. Perfect for bathrooms, kitchens, and utility areas.
+              </p>
+              <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                <li>✓ Small ring to multi-purpose designs</li>
+                <li>✓ Stainless steel and chrome options</li>
+                <li>✓ Wall-mounted installation</li>
+                <li>✓ Premium finish and durability</li>
+              </ul>
+              <button className="text-primary font-medium text-sm hover:text-primary/80">
+                Inquire →
+              </button>
+            </div>
           </div>
         </div>
       </section>
