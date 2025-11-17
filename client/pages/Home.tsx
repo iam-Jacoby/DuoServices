@@ -284,7 +284,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-secondary/50 border-t border-border">
+      <section id="ready-to-start" className="bg-secondary/50 border-t border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
             Ready to Get Started?
