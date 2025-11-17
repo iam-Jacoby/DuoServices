@@ -29,19 +29,19 @@ export default function Header() {
               to="/about"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
             >
-              About
+              About Us
             </Link>
             <Link
               to="/valiyamannil"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
             >
-              Valiyamannil
+              Gypsum Materials
             </Link>
             <Link
               to="/colors"
               className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
             >
-              Colors
+              Painting Services
             </Link>
             <Link
               to="/products"
@@ -55,6 +55,12 @@ export default function Header() {
             >
               Services
             </Link>
+            <a
+              href="https://wa.me/your-number?text=Hi, I would like to request a quote for your services."
+              className="ml-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded transition-colors text-sm"
+            >
+              Request Quote
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
