@@ -87,21 +87,21 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
             >
-              About
+              About Us
             </Link>
             <Link
               to="/valiyamannil"
               onClick={() => setMobileMenuOpen(false)}
               className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
             >
-              Valiyamannil
+              Gypsum Materials
             </Link>
             <Link
               to="/colors"
               onClick={() => setMobileMenuOpen(false)}
               className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
             >
-              Colors
+              Painting Services
             </Link>
             <Link
               to="/products"
@@ -117,6 +117,12 @@ export default function Header() {
             >
               Services
             </Link>
+            <a
+              href="https://wa.me/your-number?text=Hi, I would like to request a quote for your services."
+              className="block text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-2 rounded transition-colors mt-2"
+            >
+              Request Quote
+            </a>
           </nav>
         )}
       </div>
