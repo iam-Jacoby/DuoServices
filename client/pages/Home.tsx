@@ -1,15 +1,27 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import { ArrowRight, Star, Zap, Shield } from "lucide-react";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const scrollToSection = () => {
+    const element = document.getElementById("ready-to-start");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <Layout>
       {/* Hero Section */}
       <section
         className="relative min-h-[600px] flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg")',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/279632/pexels-photo-279632.jpeg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -22,12 +34,12 @@ export default function Home() {
             Your one-stop solution for quality gypsum materials and professional painting services
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/your-number?text=Hi, I would like to request a quote for your services."
+            <button
+              onClick={scrollToSection}
               className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors rounded"
             >
               Request a Quote
-            </a>
+            </button>
             <a
               href="https://wa.me/your-number"
               className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-white text-white font-medium hover:bg-white/10 transition-colors rounded"
