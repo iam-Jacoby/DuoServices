@@ -1,7 +1,12 @@
 import Layout from "@/components/Layout";
 import { CheckCircle2, Phone, Mail } from "lucide-react";
+import { useEffect } from "react";
 
 export default function ShopA() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       {/* Hero Section */}
