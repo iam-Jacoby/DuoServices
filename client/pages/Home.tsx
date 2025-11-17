@@ -6,31 +6,37 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 tracking-tight">
-              Two Trusted Services, One Platform
-            </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Discover premium gypsum & ceiling materials from Valiyamannil Agencies and professional painting services from Colors. Your complete solution for interior excellence.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/products"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors rounded"
-              >
-                Explore All Products
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link
-                to="/services"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-border text-foreground font-medium hover:bg-secondary transition-colors rounded"
-              >
-                View Services
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+      <section
+        className="relative min-h-[600px] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16 sm:py-24">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+            Premium Materials. Expert Craftsmanship.
+          </h1>
+          <p className="text-lg sm:text-xl text-gray-100 mb-8 leading-relaxed">
+            Your one-stop solution for quality gypsum materials and professional painting services
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://wa.me/your-number?text=Hi, I would like to request a quote for your services."
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors rounded"
+            >
+              Request a Quote
+            </a>
+            <a
+              href="https://wa.me/your-number"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-white text-white font-medium hover:bg-white/10 transition-colors rounded"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.946 1.266l-.355.192-3.674-.96.992 3.63-.235.374a9.86 9.86 0 .001 15.313l.352.19 3.695.953-.992-3.629.235-.374a9.87 9.87 0 004.946-1.266h.004c5.43 0 9.868-4.438 9.868-9.868 0-5.43-4.438-9.868-9.868-9.868z"/>
+              </svg>
+              WhatsApp Us
+            </a>
           </div>
         </div>
       </section>
