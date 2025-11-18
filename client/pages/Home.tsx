@@ -67,7 +67,7 @@ export default function Home() {
               <Link to="/valiyamannil" className="block">
                 <div className="h-64 overflow-hidden bg-muted">
                   <img
-                    src="https://images.pexels.com/photos/4178808/pexels-photo-4178808.jpeg"
+                    src="https://images.pexels.com/photos/3935683/pexels-photo-3935683.jpeg"
                     alt="Valiyamannil Agencies"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
