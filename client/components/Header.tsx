@@ -50,37 +50,37 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-1 lg:gap-6">
             <Link
               to="/"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
+              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
+              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
             >
               About Us
             </Link>
             <Link
               to="/valiyamannil"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
+              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
             >
               Gypsum Materials
             </Link>
             <Link
               to="/colors"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
+              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
             >
               Painting Services
             </Link>
             <Link
               to="/products"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
+              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
             >
               Products
             </Link>
             <Link
               to="/services"
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors px-3 py-2"
+              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
             >
               Services
             </Link>
@@ -95,9 +95,13 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 hover:bg-secondary rounded transition-colors"
+            className={`md:hidden p-2 rounded transition-colors ${isDarkBg ? "hover:bg-white/20" : "hover:bg-secondary"}`}
           >
-            <Menu className="w-5 h-5 text-foreground" />
+            {mobileMenuOpen ? (
+              <X className={`w-5 h-5 ${textColor}`} />
+            ) : (
+              <Menu className={`w-5 h-5 ${textColor}`} />
+            )}
           </button>
         </div>
 
