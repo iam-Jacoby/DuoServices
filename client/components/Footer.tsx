@@ -20,8 +20,17 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <a
+                  href="tel:+919400097977"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  +91 9400097977
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  +91 XXXXX XXXXX
+                  21/542/B5, Vettiyanickal Building, Erumely
                 </span>
               </li>
               <li className="flex items-start gap-2">
@@ -32,12 +41,6 @@ export default function Footer() {
                 >
                   info@valiyamannil.com
                 </a>
-              </li>
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">
-                  Valiyamannil, Kerala
-                </span>
               </li>
             </ul>
             <div className="mt-4 flex gap-2">
