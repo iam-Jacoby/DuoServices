@@ -63,7 +63,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Valiyamannil Card */}
-            <div className="group cursor-pointer bg-background border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+            <div className="group cursor-pointer bg-background border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <Link to="/valiyamannil" className="block">
                 <div className="h-64 overflow-hidden bg-muted">
                   <img
