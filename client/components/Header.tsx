@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { Menu } from "lucide-react";
-import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isDarkBg, setIsDarkBg] = useState(false);
 
   const handleRequestQuote = () => {
     const element = document.getElementById("ready-to-start");
@@ -12,14 +13,35 @@ export default function Header() {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const heroHeight = 600;
+      const statsSection = document.querySelector('[style*="bg-primary"]');
+      const statsTop = statsSection ? statsSection.getBoundingClientRect().top + scrollPosition : Infinity;
+
+      if ((scrollPosition < heroHeight) || (scrollPosition > statsTop && scrollPosition < statsTop + 300)) {
+        setIsDarkBg(true);
+      } else {
+        setIsDarkBg(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const textColor = isDarkBg ? "text-white" : "text-foreground";
+  const hoverColor = isDarkBg ? "hover:text-gray-200" : "hover:text-primary";
+
   return (
-    <header className="border-b border-transparent bg-black/20 backdrop-blur-sm sticky top-0 z-50">
+    <header className="border-b border-transparent bg-black/20 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Logo Text Only */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
-            <div className="w-8 h-8 bg-primary rounded-sm"></div>
-            <span className="font-semibold text-foreground hidden sm:inline">
+            <span className={`font-semibold hidden sm:inline transition-colors duration-300 ${textColor}`}>
               DuoServices
             </span>
           </Link>
