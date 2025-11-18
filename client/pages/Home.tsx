@@ -352,12 +352,6 @@ export default function Home() {
             >
               Contact Colors
             </Link>
-            <a
-              href="https://wa.me/your-number"
-              className="inline-flex items-center justify-center px-6 py-3 border border-border text-foreground font-medium hover:bg-secondary transition-colors rounded"
-            >
-              WhatsApp Us
-            </a>
           </div>
         </div>
       </section>
