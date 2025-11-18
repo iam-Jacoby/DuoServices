@@ -148,7 +148,7 @@ export default function About() {
             Our Shared Values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="border border-border rounded p-8 bg-background">
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-all animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Mission
               </h3>
@@ -159,7 +159,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="border border-border rounded p-8 bg-background">
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-all animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Vision
               </h3>
@@ -170,7 +170,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="border border-border rounded p-8 bg-background">
+            <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-all animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Values
               </h3>
