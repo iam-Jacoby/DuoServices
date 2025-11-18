@@ -31,11 +31,11 @@ export default function About() {
       <section className="bg-secondary/50 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 overflow-hidden rounded">
+            <div className="order-2 md:order-1 overflow-hidden rounded animate-fade-in hover:shadow-lg transition-shadow">
               <img
-                src="https://images.pexels.com/photos/4178808/pexels-photo-4178808.jpeg"
+                src="https://images.pexels.com/photos/3935683/pexels-photo-3935683.jpeg"
                 alt="Valiyamannil Agencies workspace"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="order-1 md:order-2">
