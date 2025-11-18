@@ -103,7 +103,7 @@ export default function Home() {
             </div>
 
             {/* Colors Card */}
-            <div className="group cursor-pointer bg-background border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+            <div className="group cursor-pointer bg-background border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <Link to="/colors" className="block">
                 <div className="h-64 overflow-hidden bg-muted">
                   <img
