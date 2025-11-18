@@ -152,7 +152,7 @@ export default function Home() {
             Why Choose DuoServices
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="border border-border rounded p-8 hover:border-primary hover:shadow-lg transition-all">
+            <div className="border border-border rounded p-8 hover:border-primary hover:shadow-lg transition-all animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <div className="w-12 h-12 bg-primary/10 rounded mb-4 flex items-center justify-center">
                 <Shield className="w-6 h-6 text-primary" />
               </div>
@@ -165,7 +165,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border border-border rounded p-8 hover:border-primary hover:shadow-lg transition-all">
+            <div className="border border-border rounded p-8 hover:border-primary hover:shadow-lg transition-all animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <div className="w-12 h-12 bg-primary/10 rounded mb-4 flex items-center justify-center">
                 <Zap className="w-6 h-6 text-primary" />
               </div>
@@ -178,7 +178,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border border-border rounded p-8 hover:border-primary hover:shadow-lg transition-all">
+            <div className="border border-border rounded p-8 hover:border-primary hover:shadow-lg transition-all animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <div className="w-12 h-12 bg-primary/10 rounded mb-4 flex items-center justify-center">
                 <Star className="w-6 h-6 text-primary" />
               </div>
