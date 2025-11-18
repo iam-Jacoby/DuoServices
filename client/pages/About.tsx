@@ -192,39 +192,27 @@ export default function About() {
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-12">
             Our Team
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {[
               {
-                name: "Raj Kumar",
-                role: "Co-founder, Valiyamannil",
+                name: "Abey Jacob",
+                role: "Founder, Valiyamannil Agencies",
                 image:
                   "https://images.pexels.com/photos/4100672/pexels-photo-4100672.jpeg",
               },
               {
-                name: "Priya Singh",
-                role: "Co-founder, Colors",
+                name: "Anu",
+                role: "Founder, Colors",
                 image:
                   "https://images.pexels.com/photos/5217852/pexels-photo-5217852.jpeg",
               },
-              {
-                name: "Arjun Nair",
-                role: "Operations Manager",
-                image:
-                  "https://images.pexels.com/photos/4128536/pexels-photo-4128536.jpeg",
-              },
-              {
-                name: "Anjali Patel",
-                role: "Quality Assurance Lead",
-                image:
-                  "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg",
-              },
             ].map((member, i) => (
-              <div key={i} className="text-center">
-                <div className="h-64 mb-4 rounded overflow-hidden bg-muted">
+              <div key={i} className="text-center animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
+                <div className="h-64 mb-4 rounded overflow-hidden bg-muted hover:shadow-lg transition-shadow">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
                       e.currentTarget.src =
                         "https://images.pexels.com/photos/4100672/pexels-photo-4100672.jpeg";
