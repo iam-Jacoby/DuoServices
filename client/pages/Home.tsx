@@ -19,10 +19,10 @@ export default function Home() {
     <Layout>
       {/* Hero Section */}
       <section
-        className="relative min-h-[600px] flex items-center justify-center bg-cover bg-center"
+        className="relative min-h-[600px] flex items-center justify-center bg-cover bg-center animate-fade-in"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/279632/pexels-photo-279632.jpeg")',
+            'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
