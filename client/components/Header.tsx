@@ -107,7 +107,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden border-t border-border py-4 space-y-2">
+          <nav className="md:hidden border-t border-border py-4 space-y-2 bg-background/95 backdrop-blur-sm animate-fade-in">
             <Link
               to="/"
               onClick={() => setMobileMenuOpen(false)}
