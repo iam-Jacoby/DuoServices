@@ -88,11 +88,11 @@ export default function About() {
       <section className="bg-background border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="overflow-hidden rounded">
+            <div className="overflow-hidden rounded animate-fade-in hover:shadow-lg transition-shadow">
               <img
                 src="https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg"
                 alt="Colors painting services"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div>
