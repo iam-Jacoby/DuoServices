@@ -283,6 +283,15 @@ export default function Home() {
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
                   <span className="text-muted-foreground">
+                    House Cleaning Services
+                  </span>
+                  <span className="inline-block px-2 py-0.5 text-xs font-bold text-red-600 animate-pulse bg-red-100 rounded">
+                    New
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2"></span>
+                  <span className="text-muted-foreground">
                     Interior & Exterior Painting
                   </span>
                 </li>
