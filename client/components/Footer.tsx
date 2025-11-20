@@ -45,7 +45,7 @@ export default function Footer() {
             </ul>
             <div className="mt-4 flex gap-2">
               <a
-                href="https://wa.me/your-number"
+                href="https://wa.me/919400097977"
                 className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded hover:bg-primary/90 transition-colors"
               >
                 WhatsApp
@@ -158,7 +158,7 @@ export default function Footer() {
           <p className="text-xs text-muted-foreground">
             © {currentYear} DuoServices. All rights reserved.
           </p>
-          <div className="flex gap-4 mt-4 sm:mt-0">
+          {/* <div className="flex gap-4 mt-4 sm:mt-0">
             <a
               href="#"
               className="text-xs text-muted-foreground hover:text-foreground transition-colors"
@@ -177,7 +177,7 @@ export default function Footer() {
             >
               WhatsApp
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

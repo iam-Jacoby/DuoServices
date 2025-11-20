@@ -7,23 +7,47 @@ export default function Header() {
   const [isDarkBg, setIsDarkBg] = useState(false);
 
   const handleRequestQuote = () => {
-    const element = document.getElementById("ready-to-start");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    const el =
+      document.getElementById("contact-section") ||
+      document.getElementById("ready-to-start"); // fallback
+
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // If user is on another page, first navigate home then scroll
+      window.location.href = "/#contact-section";
     }
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const heroHeight = 600;
-      const statsSection = document.querySelector('[style*="bg-primary"]');
-      const statsTop = statsSection ? statsSection.getBoundingClientRect().top + scrollPosition : Infinity;
+      const navbar = document.querySelector("header");
+      if (!navbar) return;
 
-      if ((scrollPosition < heroHeight) || (scrollPosition > statsTop && scrollPosition < statsTop + 300)) {
-        setIsDarkBg(true);
+      const navbarRect = navbar.getBoundingClientRect();
+      const navbarMiddle = navbarRect.top + navbarRect.height / 2;
+
+      // HERO SECTION HEIGHT CHECK
+      const heroHeight = 600;
+      const scrollPosition = window.scrollY;
+      const overHero = scrollPosition < heroHeight;
+
+      // QUICK STATS SECTION CHECK
+      const statsSection = document.getElementById("quick-stats");
+      let overStats = false;
+
+      if (statsSection) {
+        const rect = statsSection.getBoundingClientRect();
+        if (navbarMiddle >= rect.top && navbarMiddle <= rect.bottom) {
+          overStats = true;
+        }
+      }
+
+      // BACKGROUND COLOR DECISION
+      if (overHero || overStats) {
+        setIsDarkBg(true);   // white navbar text
       } else {
-        setIsDarkBg(false);
+        setIsDarkBg(false);  // black navbar text
       }
     };
 
@@ -32,58 +56,45 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const textColor = isDarkBg ? "text-white" : "text-foreground";
-  const hoverColor = isDarkBg ? "hover:text-gray-200" : "hover:text-primary";
+  // ----------------------------
+  // TEXT + HOVER COLOR LOGIC
+  // ----------------------------
+  const textColor = isDarkBg ? "text-white" : "text-black";
+  const hoverColor = isDarkBg ? "hover:text-black" : "hover:text-white";
 
   return (
-    <header className="border-b border-transparent bg-black/20 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300">
+    <header className="border-b border-transparent bg-black/40 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo Text Only */}
+
+          {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
-            <span className={`font-semibold hidden sm:inline transition-colors duration-300 ${textColor}`}>
+            <span
+              className={`font-semibold hidden sm:inline transition-colors duration-300 ${textColor}`}
+            >
               DuoServices
             </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-6">
-            <Link
-              to="/"
-              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
-            >
-              About Us
-            </Link>
-            <Link
-              to="/valiyamannil"
-              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
-            >
-              Gypsum Materials
-            </Link>
-            <Link
-              to="/colors"
-              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
-            >
-              Painting Services
-            </Link>
-            <Link
-              to="/products"
-              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
-            >
-              Products
-            </Link>
-            <Link
-              to="/services"
-              className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
-            >
-              Services
-            </Link>
+            {[
+              { to: "/", label: "Home" },
+              { to: "/about", label: "About Us" },
+              { to: "/valiyamannil", label: "Gypsum Materials" },
+              { to: "/colors", label: "Painting Services" },
+              { to: "/products", label: "Products" },
+              { to: "/services", label: "Services" },
+            ].map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
+              >
+                {item.label}
+              </Link>
+            ))}
+
             <button
               onClick={handleRequestQuote}
               className="ml-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded transition-colors text-sm"
@@ -92,10 +103,12 @@ export default function Header() {
             </button>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`md:hidden p-2 rounded transition-colors ${isDarkBg ? "hover:bg-white/20" : "hover:bg-secondary"}`}
+            className={`md:hidden p-2 rounded transition-colors ${
+              isDarkBg ? "hover:bg-white/20" : "hover:bg-black/20"
+            }`}
           >
             {mobileMenuOpen ? (
               <X className={`w-5 h-5 ${textColor}`} />
@@ -105,51 +118,27 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden border-t border-border py-4 space-y-2 bg-background/95 backdrop-blur-sm animate-fade-in">
-            <Link
-              to="/"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
-            >
-              About Us
-            </Link>
-            <Link
-              to="/valiyamannil"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
-            >
-              Gypsum Materials
-            </Link>
-            <Link
-              to="/colors"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
-            >
-              Painting Services
-            </Link>
-            <Link
-              to="/products"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
-            >
-              Products
-            </Link>
-            <Link
-              to="/services"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium text-foreground hover:text-primary hover:bg-secondary px-3 py-2 rounded transition-colors"
-            >
-              Services
-            </Link>
+          <nav className="md:hidden border-t border-border py-4 space-y-2 bg-black/80 backdrop-blur-lg animate-fade-in">
+            {[
+              { to: "/", label: "Home" },
+              { to: "/about", label: "About Us" },
+              { to: "/valiyamannil", label: "Gypsum Materials" },
+              { to: "/colors", label: "Painting Services" },
+              { to: "/products", label: "Products" },
+              { to: "/services", label: "Services" },
+            ].map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-sm font-medium text-white hover:text-black hover:bg-white/30 px-3 py-2 rounded transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
+
             <button
               onClick={() => {
                 setMobileMenuOpen(false);

@@ -7,6 +7,13 @@ export default function ShopA() {
     window.scrollTo(0, 0);
   }, []);
 
+const scrollToContact = () => {
+  const section = document.getElementById("contact-section");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -17,7 +24,7 @@ export default function ShopA() {
               <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-2">
                 Valiyamannil Agencies
               </h1>
-              <p className="text-lg text-primary font-semibold mb-6">
+              <p className="text-lg font-bold mb-6" style={{ color: "#ffd900ff" }}>
                 Premium Gypsum & Ceiling Materials Supplier
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
@@ -53,13 +60,16 @@ export default function ShopA() {
                   </span>
                 </div>
               </div>
-              <button className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
+              <button
+                onClick={scrollToContact}
+                className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors"
+              >
                 Request a Quote
               </button>
             </div>
             <div className="overflow-hidden rounded h-96 sm:h-full">
               <img
-                src="https://images.pexels.com/photos/4178808/pexels-photo-4178808.jpeg"
+                src="/Gypsum_Ceiling.png"
                 alt="Gypsum ceiling installation"
                 className="w-full h-full object-cover"
               />
@@ -91,7 +101,7 @@ export default function ShopA() {
                 <li>✓ Sound-absorbing properties</li>
                 <li>✓ Easy installation</li>
               </ul>
-              <button className="text-primary font-medium text-sm hover:text-primary/80">
+              <button onClick={scrollToContact} className="text-primary font-medium text-sm hover:text-primary/80">
                 Inquire →
               </button>
             </div>
@@ -112,7 +122,7 @@ export default function ShopA() {
                 <li>✓ Easy maintenance</li>
                 <li>✓ Multiple finish options</li>
               </ul>
-              <button className="text-primary font-medium text-sm hover:text-primary/80">
+              <button onClick={scrollToContact} className="text-primary font-medium text-sm hover:text-primary/80">
                 Inquire →
               </button>
             </div>
@@ -133,7 +143,7 @@ export default function ShopA() {
                 <li>✓ Easy installation</li>
                 <li>✓ Wide color options</li>
               </ul>
-              <button className="text-primary font-medium text-sm hover:text-primary/80">
+              <button onClick={scrollToContact} className="text-primary font-medium text-sm hover:text-primary/80">
                 Inquire →
               </button>
             </div>
@@ -154,7 +164,7 @@ export default function ShopA() {
                 <li>✓ Dimmable options</li>
                 <li>✓ Modern aesthetic design</li>
               </ul>
-              <button className="text-primary font-medium text-sm hover:text-primary/80">
+              <button onClick={scrollToContact} className="text-primary font-medium text-sm hover:text-primary/80">
                 Inquire →
               </button>
             </div>
@@ -163,6 +173,9 @@ export default function ShopA() {
             <div className="border border-border rounded p-8 bg-background hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-semibold text-foreground mb-3">
                 Towel Racks & Bathroom Accessories
+                <span className="inline-block mx-5 px-2 py-0.5 text-xs font-bold text-red-600 animate-pulse bg-red-100 rounded">
+                  New
+                </span>
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Stylish and durable towel racks ranging from small ring designs
@@ -175,7 +188,7 @@ export default function ShopA() {
                 <li>✓ Wall-mounted installation</li>
                 <li>✓ Premium finish and durability</li>
               </ul>
-              <button className="text-primary font-medium text-sm hover:text-primary/80">
+              <button onClick={scrollToContact} className="text-primary font-medium text-sm hover:text-primary/80">
                 Inquire →
               </button>
             </div>
@@ -233,7 +246,9 @@ export default function ShopA() {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-secondary/50">
+      <section
+        id="contact-section"
+        className="bg-secondary/50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-6">
             Get in Touch
@@ -278,10 +293,6 @@ export default function ShopA() {
               </a>
             </div>
           </div>
-
-          <button className="w-full px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
-            Request a Quotation
-          </button>
         </div>
       </section>
     </Layout>

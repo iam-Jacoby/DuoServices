@@ -213,6 +213,9 @@ export default function ShopB() {
               </div>
               <h3 className="text-2xl font-semibold text-foreground mb-3">
                 House Cleaning Services
+                <span className="inline-block mx-5 px-2 py-0.5 text-xs font-bold text-red-600 animate-pulse bg-red-100 rounded">
+                  New
+                </span>
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Professional house cleaning services to keep your spaces clean
@@ -344,7 +347,9 @@ export default function ShopB() {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-background">
+      <section
+        id="contact-section"
+        className="bg-background">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-6">
             Ready to Paint Your Space?
@@ -368,14 +373,13 @@ export default function ShopB() {
             </div>
 
             <div className="bg-secondary border border-border rounded p-6 text-center">
-              <Mail className="w-6 h-6 text-primary mx-auto mb-3" />
-              <p className="text-sm text-muted-foreground mb-2">Email</p>
-              <a
-                href="mailto:info@colors.com"
-                className="text-foreground font-semibold hover:text-primary transition-colors"
-              >
-                info@colors.com
-              </a>
+              <span className="text-2xl text-primary mx-auto mb-3 inline-block">
+                📍
+              </span>
+              <p className="text-sm text-muted-foreground mb-2">Address</p>
+              <p className="text-foreground font-semibold">
+                21/542/B5, Vettiyanickal Building, Erumely
+              </p>
             </div>
 
             <div className="bg-secondary border border-border rounded p-6 text-center">
@@ -391,10 +395,6 @@ export default function ShopB() {
               </a>
             </div>
           </div>
-
-          <button className="w-full px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
-            Request Free Estimate
-          </button>
         </div>
       </section>
     </Layout>

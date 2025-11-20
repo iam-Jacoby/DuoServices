@@ -150,7 +150,9 @@ export default function Products() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary text-primary-foreground">
+      <section
+        id="contact-section"
+        className="bg-primary text-primary-foreground">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Need Help Finding the Right Product?

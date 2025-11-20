@@ -67,7 +67,7 @@ export default function Home() {
               <Link to="/valiyamannil" className="block">
                 <div className="h-64 overflow-hidden bg-muted">
                   <img
-                    src="https://images.pexels.com/photos/3935683/pexels-photo-3935683.jpeg"
+                    src="/Gypsum_Ceiling.png"
                     alt="Valiyamannil Agencies"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -195,7 +195,7 @@ export default function Home() {
       </section>
 
       {/* Quick Stats */}
-      <section className="bg-primary text-primary-foreground">
+      <section id="quick-stats" className="bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -328,9 +328,8 @@ export default function Home() {
 
       {/* CTA Section */}
       <section
-        id="ready-to-start"
-        className="bg-secondary/50 border-t border-border"
-      >
+        id="contact-section"
+        className="bg-secondary/50 border-t border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
             Ready to Get Started?

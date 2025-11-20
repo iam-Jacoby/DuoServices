@@ -33,7 +33,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 overflow-hidden rounded animate-fade-in hover:shadow-lg transition-shadow">
               <img
-                src="https://images.pexels.com/photos/3935683/pexels-photo-3935683.jpeg"
+                src="/Gypsum_Ceiling.png"
                 alt="Valiyamannil Agencies workspace"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -232,7 +232,7 @@ export default function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-primary text-primary-foreground">
+      <section id="quick-stats" className="bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -258,7 +258,9 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-background border-t border-border">
+      <section
+        id="contact-section"
+        className="bg-background border-t border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
             Start Your Project Today
