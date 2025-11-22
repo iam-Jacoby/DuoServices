@@ -202,12 +202,16 @@ export default function Services() {
             specific project needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
-              Contact Valiyamannil
-            </button>
-            <button className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
-              Contact Colors
-            </button>
+            <a href="tel:+919400097977">
+              <button className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
+                Contact Valiyamannil
+              </button>
+            </a>
+            <a href="tel:+91xxxxxxxxxx">
+              <button className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
+                Contact Colors
+              </button>
+            </a>
           </div>
         </div>
       </section>

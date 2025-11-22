@@ -24,9 +24,7 @@ const scrollToContact = () => {
               <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-2">
                 Valiyamannil Agencies
               </h1>
-              <p className="text-lg font-bold mb-6" style={{ color: "#ffd900ff" }}>
-                Premium Gypsum & Ceiling Materials Supplier
-              </p>
+              <p className="text-lg text-primary font-semibold mb-6"> Premium Gypsum & Ceiling Materials Supplier </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Your trusted partner for high-quality gypsum boards, suspended
                 ceilings, PVC panels, and ceiling lights. With 2+ years of

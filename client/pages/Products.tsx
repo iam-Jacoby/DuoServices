@@ -152,18 +152,32 @@ export default function Products() {
       {/* CTA Section */}
       <section
         id="contact-section"
-        className="bg-primary text-primary-foreground">
+        className="bg-background border-t border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Need Help Finding the Right Product?
           </h2>
-          <p className="text-lg text-primary-foreground/80 mb-8">
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
             Our experts are ready to assist you with product selection,
             specifications, and quotations.
           </p>
-          <button className="px-6 py-3 bg-primary-foreground text-primary font-medium rounded hover:bg-primary-foreground/90 transition-colors">
-            Contact Our Team
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+            {/* Valiyamannil Contact */}
+            <a href="tel:+919876543210">
+              <button className="px-6 py-3 bg-white text-black font-medium rounded transition-colors hover:bg-gray-800 hover:text-white">
+                Contact Valiyamannil
+              </button>
+            </a>
+
+            {/* Colors Contact */}
+            <a href="tel:+91xxxxxxxxxx">
+              <button className="px-6 py-3 bg-white text-black font-medium rounded transition-colors hover:bg-gray-800 hover:text-white">
+                Contact Colors
+              </button>
+            </a>
+
+          </div>
         </div>
       </section>
     </Layout>

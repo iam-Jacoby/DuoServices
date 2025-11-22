@@ -79,6 +79,20 @@ export const services: Service[] = [
       "Preventive maintenance plans",
     ],
   },
+  {
+  id: "val-accessories-6",
+  name: "Towel Racks & Bathroom Accessories",
+  shop: "valiyamannil",
+  category: "gypsum-ceiling",
+  description:
+    "Premium-quality towel racks and essential bathroom accessories supplied by Valiyamannil Agencies. Durable, stylish, and designed for long-lasting performance.",
+  features: [
+    "High-quality metal and steel options",
+    "Rust-resistant materials",
+    "Easy installation",
+    "Modern and minimal designs",
+  ],
+},
 
   // Colors - Painting Services
   {
@@ -165,4 +179,18 @@ export const services: Service[] = [
       "Competitive large-project rates",
     ],
   },
+  {
+  id: "col-cleaning-7",
+  name: "House Cleaning Services",
+  shop: "colors",
+  category: "painting",
+  description:
+    "Professional house cleaning services provided by Colors. Deep cleaning for homes and apartments with reliable staff and high-grade cleaning materials.",
+  features: [
+    "Deep & surface cleaning",
+    "Trained and verified staff",
+    "Eco-friendly cleaning supplies",
+    "Affordable service packages",
+  ],
+},
 ];

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -6,15 +6,17 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isDarkBg, setIsDarkBg] = useState(false);
 
+  const location = useLocation();
+  const isActive = (path: string) => location.pathname === path;
+
   const handleRequestQuote = () => {
     const el =
       document.getElementById("contact-section") ||
-      document.getElementById("ready-to-start"); // fallback
+      document.getElementById("ready-to-start");
 
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
     } else {
-      // If user is on another page, first navigate home then scroll
       window.location.href = "/#contact-section";
     }
   };
@@ -27,12 +29,10 @@ export default function Header() {
       const navbarRect = navbar.getBoundingClientRect();
       const navbarMiddle = navbarRect.top + navbarRect.height / 2;
 
-      // HERO SECTION HEIGHT CHECK
       const heroHeight = 600;
       const scrollPosition = window.scrollY;
       const overHero = scrollPosition < heroHeight;
 
-      // QUICK STATS SECTION CHECK
       const statsSection = document.getElementById("quick-stats");
       let overStats = false;
 
@@ -43,11 +43,10 @@ export default function Header() {
         }
       }
 
-      // BACKGROUND COLOR DECISION
       if (overHero || overStats) {
-        setIsDarkBg(true);   // white navbar text
+        setIsDarkBg(true);
       } else {
-        setIsDarkBg(false);  // black navbar text
+        setIsDarkBg(false);
       }
     };
 
@@ -56,11 +55,13 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // ----------------------------
-  // TEXT + HOVER COLOR LOGIC
-  // ----------------------------
   const textColor = isDarkBg ? "text-white" : "text-black";
   const hoverColor = isDarkBg ? "hover:text-black" : "hover:text-white";
+
+  // ACTIVE item text color only (no background)
+  const activeColor = isDarkBg
+    ? "text-black font-semibold"
+    : "text-white font-semibold";
 
   return (
     <header className="border-b border-transparent bg-black/40 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300">
@@ -69,14 +70,12 @@ export default function Header() {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
-            <span
-              className={`font-semibold hidden sm:inline transition-colors duration-300 ${textColor}`}
-            >
+            <span className={`font-semibold hidden sm:inline transition-colors duration-300 ${textColor}`}>
               DuoServices
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-1 lg:gap-6">
             {[
               { to: "/", label: "Home" },
@@ -89,7 +88,14 @@ export default function Header() {
               <Link
                 key={item.to}
                 to={item.to}
-                className={`text-sm font-medium transition-colors px-3 py-2 ${textColor} ${hoverColor}`}
+                className={`
+                  text-sm font-medium px-3 py-2 transition-colors
+                  ${
+                    isActive(item.to)
+                      ? activeColor
+                      : `${textColor} ${hoverColor}`
+                  }
+                `}
               >
                 {item.label}
               </Link>
@@ -103,7 +109,7 @@ export default function Header() {
             </button>
           </nav>
 
-          {/* Mobile Menu Toggle */}
+          {/* Mobile Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className={`md:hidden p-2 rounded transition-colors ${
@@ -133,7 +139,14 @@ export default function Header() {
                 key={item.to}
                 to={item.to}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-sm font-medium text-white hover:text-black hover:bg-white/30 px-3 py-2 rounded transition-colors"
+                className={`
+                  block text-sm font-medium px-3 py-2 transition-colors
+                  ${
+                    isActive(item.to)
+                      ? activeColor
+                      : "text-white hover:text-black"
+                  }
+                `}
               >
                 {item.label}
               </Link>

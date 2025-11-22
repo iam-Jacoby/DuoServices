@@ -15,7 +15,7 @@ export const products: Product[] = [
     category: "ceiling-gypsum",
     description:
       "High-quality gypsum boards suitable for interior walls and ceiling applications. Fire-resistant and acoustically optimized for residential and commercial spaces.",
-    image: "https://images.pexels.com/photos/4178808/pexels-photo-4178808.jpeg",
+    image: "/Gypsum_Board.jpeg",
     features: [
       "Fire-resistant",
       "Moisture-resistant variants available",
@@ -77,6 +77,21 @@ export const products: Product[] = [
       "Easy application",
       "Durable material",
       "Multiple sizes available",
+    ],
+  },
+  // --- NEW PRODUCT 1 ---
+  {
+    id: "towel-racks",
+    name: "Towel Racks & Bathroom Accessories",
+    category: "ceiling-gypsum",
+    image: "/towel_rack.jpg",
+    description:
+      "Premium-grade towel racks and bathroom accessories supplied by Valiyamannil Agencies. Designed for durability, style, and long-lasting performance.",
+    features: [
+      "Rust-resistant durable materials",
+      "Easy wall-mount installation",
+      "Modern stylish design",
+      "Suitable for homes & commercial buildings",
     ],
   },
 
@@ -149,6 +164,21 @@ export const products: Product[] = [
       "Water-resistant",
       "High gloss finish",
       "Professional-grade quality",
+    ],
+  },
+  // --- NEW PRODUCT 2 ---
+  {
+    id: "house-cleaning-services",
+    name: "House Cleaning Services",
+    category: "painting-supplies",
+    image: "/cleaning_service.jpg",
+    description:
+      "Professional home cleaning and maintenance services by Colors Painting Shop. Deep cleaning, surface preparation, and post-painting cleanup.",
+    features: [
+      "Deep home cleaning",
+      "Skilled trained cleaning team",
+      "Includes pre-painting & post-painting cleanup",
+      "Affordable & fast service",
     ],
   },
 ];

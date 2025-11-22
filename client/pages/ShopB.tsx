@@ -7,6 +7,13 @@ export default function ShopB() {
     window.scrollTo(0, 0);
   }, []);
 
+const scrollToContact = () => {
+  const section = document.getElementById("contact-section");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -52,7 +59,10 @@ export default function ShopB() {
                   </span>
                 </div>
               </div>
-              <button className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors">
+              <button 
+                onClick={scrollToContact}
+                className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary/90 transition-colors"
+                >
                 Get Free Estimate
               </button>
             </div>
